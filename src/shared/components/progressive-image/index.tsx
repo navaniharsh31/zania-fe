@@ -22,7 +22,7 @@ const ProgressiveImage = ({ src, placeholder, alt }: ProgressiveImageProps) => {
   }, [src]);
 
   return (
-    <div className={twMerge("relative w-full", !imageLoaded ? "h-48" : "")}>
+    <div className={twMerge("relative w-full cursor-pointer", !imageLoaded ? "h-48" : "")}>
       <img
         src={currentSrc}
         alt={alt}
