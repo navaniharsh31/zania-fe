@@ -23,6 +23,9 @@ Images load smoothly with a placeholder and spinner until they're fully loaded.
 ### 4. Viewing Media
 Clicking on an image displays it in a larger view with the card's info. Users can close it by pressing ESC or clicking the "X" icon.
 
+## 5. Auto Save
+Cards are auto-saved every 5 seconds if there are any changes made.
+
 
 ## Approach
 ### 1. Data manipulation
@@ -36,3 +39,7 @@ A ProgressiveImage Component is used to handle the image. A placeholder (optiona
 
 ### 4. Styling
 I've used **TailwindCSS** to manage styles. To display the cards, flexbox has been used, each card container has a `flex-basis` of 33.33%, which ensures that 3 cards are shown at max in one row. And if there are 2 cards in a row, the cards will be shown in the middle, this is achieved by `align-items: center`
+
+
+### 5. Auto Saving
+A copy of the data is stored before every change, this copy is compared to the main data, if the data dont match, the save function is called. Lodash's `isEqual` method is used to compare data. 
