@@ -1,7 +1,5 @@
 import { atom } from "jotai";
-import { CardData, MediaViewerData } from "../typings";
-
-export const cardsAtom = atom<CardData[]>([]);
+import { MediaViewerData } from "../typings";
 
 export const mediaViewerAtom = atom<MediaViewerData>({
   isOpen: false,

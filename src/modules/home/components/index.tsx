@@ -2,13 +2,14 @@ import { useCallback, useEffect, useState } from "react";
 
 import isEqual from "lodash.isequal";
 import { useAtom, useAtomValue } from "jotai";
-import { cardsAtom, mediaViewerAtom } from "../../../shared/states";
+import { mediaViewerAtom } from "../../../shared/states";
 import usePrevious from "../../../shared/hooks/usePrevious";
 import { fetchCards, saveCards } from "../requests";
 import Card from "../../../shared/components/molecules/card";
 import { CARD_IMAGE_MAP } from "../../../shared/constants";
 import Spinner from "../../../shared/components/atoms/spinner";
 import MediaViewer from "../../../shared/components/molecules/media-viewer";
+import { cardsAtom } from "../states";
 
 function HomePage() {
   const [cards, setCards] = useAtom(cardsAtom);
