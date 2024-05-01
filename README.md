@@ -23,7 +23,7 @@ Images load smoothly with a placeholder and spinner until they're fully loaded.
 ### 4. Viewing Media
 Clicking on an image displays it in a larger view with the card's info. Users can close it by pressing ESC or clicking the "X" icon.
 
-## 5. Auto Save
+### 5. Auto Save
 Cards are auto-saved every 5 seconds if there are any changes made.
 
 
