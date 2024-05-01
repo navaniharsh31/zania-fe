@@ -1,9 +1,10 @@
 import { useCallback } from "react";
 import { CardData, ImageData } from "../../../typings";
 import ProgressiveImage from "../progressive-image";
-import { cardsAtom, mediaViewerAtom } from "../../../states";
+import { mediaViewerAtom } from "../../../states";
 import { useSetAtom } from "jotai";
 import { useDrag, useDrop } from "react-dnd";
+import { cardsAtom } from "../../../../modules/home/states";
 
 interface CardProps {
   data: CardData;
