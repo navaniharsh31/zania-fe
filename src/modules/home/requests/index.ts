@@ -1,4 +1,4 @@
-import { CardData } from "../typings";
+import { CardData } from "../../../shared/typings";
 
 export async function fetchCards(): Promise<CardData[]> {
   const response = await fetch(`/cards`);

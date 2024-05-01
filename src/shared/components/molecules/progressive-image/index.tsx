@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Spinner from "../spinner";
+import Spinner from "../../atoms/spinner";
 import { twMerge } from "tailwind-merge";
 
 interface ProgressiveImageProps {
@@ -22,7 +22,12 @@ const ProgressiveImage = ({ src, placeholder, alt }: ProgressiveImageProps) => {
   }, [src]);
 
   return (
-    <div className={twMerge("relative w-full cursor-pointer", !imageLoaded ? "h-48" : "")}>
+    <div
+      className={twMerge(
+        "relative w-full cursor-pointer",
+        !imageLoaded ? "h-48" : ""
+      )}
+    >
       <img
         src={currentSrc}
         alt={alt}

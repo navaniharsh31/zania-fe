@@ -1,7 +1,7 @@
 import { useAtom } from "jotai";
-import { mediaViewerAtom } from "../../states";
+import { mediaViewerAtom } from "../../../states";
 import { useEffect, useRef } from "react";
-import { CARD_IMAGE_MAP } from "../../constants";
+import { CARD_IMAGE_MAP } from "../../../constants";
 
 const MediaViewer = () => {
   const [state, setState] = useAtom(mediaViewerAtom);

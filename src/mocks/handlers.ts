@@ -1,7 +1,7 @@
 import { http, HttpResponse, PathParams } from "msw";
 import { BASE_DATA } from "../shared/constants";
-import { CardData } from "../shared/typings";
 import { delay } from "../shared/utils/delay";
+import { CardData } from "../shared/typings";
 
 export const handlers = [
   http.get(`/cards`, async () => {

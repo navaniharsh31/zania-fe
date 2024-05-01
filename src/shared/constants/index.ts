@@ -1,4 +1,4 @@
-import { CardData, BaseDataTypes, ImageData } from "../typings";
+import { BaseDataTypes, CardData, ImageData } from "../typings";
 
 export const API_URL = "https://example.com";
 
