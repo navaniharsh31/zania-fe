@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Zania Frontend Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Links
 
-Currently, two official plugins are available:
+[Visit Application](https://zania-fe.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology Used
+The Zania Frontend uses **React.js, TailwindCSS, Jotai, and MSW**.
 
-## Expanding the ESLint configuration
+## How It's Organized
+The code is structured using the Atomic Design method, which helps keep everything organized and easy to manage.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## What It Can Do
+### 1. Handling Data
+The app can fetch and update data using MSW and local storage. Changes persist even if the page is refreshed.
 
-- Configure the top-level `parserOptions` property like this:
+### 2. Drag-and-Drop
+Users can easily move things around with drag-and-drop functionality, thanks to React-DND.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### 3. Loading Images Smoothly
+Images load smoothly with a placeholder and spinner until they're fully loaded.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 4. Viewing Media
+Clicking on an image displays it in a larger view with the card's info. Users can close it by pressing ESC or clicking the "X" icon.
